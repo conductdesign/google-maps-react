@@ -167,7 +167,7 @@ export class Map extends React.Component {
           keyboardShortcuts: this.props.keyboardShortcuts,
           disableDoubleClickZoom: this.props.disableDoubleClickZoom,
           noClear: this.props.noClear,
-          styles: this.props.styles,
+          mapId: this.props.mapId,
           gestureHandling: this.props.gestureHandling
         }
       );
@@ -300,7 +300,7 @@ Map.propTypes = {
   keyboardShortcuts: PropTypes.bool,
   disableDoubleClickZoom: PropTypes.bool,
   noClear: PropTypes.bool,
-  styles: PropTypes.array,
+  mapId: PropTypes.string,
   gestureHandling: PropTypes.string,
   bounds: PropTypes.object
 };
